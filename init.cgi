@@ -79,7 +79,8 @@ $cf{version} = 'postmail v8.02';
 $cf{kcode} = 'utf8';
 
 # 送信先メールアドレス
-$cf{mailto} = 'hisazumi@cajon.co.jp';
+$cf{mailto} = 'okinawa-umizoku@8102.co.jp';
+$cf{bcc} = 'y.miyasaki@cajon.co.jp';
 
 # sendmailのパス【サーバパス】
 # → プロバイダの指定を確認のこと
@@ -148,10 +149,10 @@ $cf{sestime} = 5;
 # 送信後の形態
 # 0 : 完了メッセージを出す.
 # 1 : 戻り先 ($back) へ自動ジャンプさせる.
-$cf{reload} = 0;
+$cf{reload} = 1;
 
 # 送信後の戻り先【URLパス】
-$cf{back} = '../index.html';
+$cf{back} = './thanks.html';
 
 # フォームのname値の正当性をチェックする（セキュリティ強化策）
 # → 半角文字は英数字、アンダーバー、ハイフンはOK。全角は全てOK
