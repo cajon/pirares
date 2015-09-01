@@ -1,0 +1,70 @@
+/*おび開始 体験ダイビング*/
+
+.top_box01 {
+    background-image: url(./img/snorkel1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+/*おび終了 体験ダイビング*/
+
+
+/*** レスポンシブテーブルデザイン ***/
+.shokai{
+  width:70%;
+  border: 2px solid #d6ceb4;
+  overflow: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
+  margin-bottom: 30px;
+  margin: 0 auto;
+}
+
+.shokai th{
+  padding: 6px 8px 5px;
+  border-top: solid 1px #ffffff;
+  width: 30%;
+  overflow: hidden;
+  color: #13131e;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100%;
+  text-align: left;
+  word-break: break-all;
+  word-wrap: break-word;
+  vertical-align: top;
+  background-color: #eeece4;
+}
+ 
+.shokai td{
+padding: 5px 10px;
+text-align: left;
+vertical-align: top;
+color: #595960;
+background-color: #ffffff;
+border-top: dotted 1px #e0dccc;
+overflow: hidden;
+word-break: break-all;
+word-wrap: break-word;
+}
+ 
+@media (max-width: 400px){
+.shokai{
+  width:100%;
+  }
+.shokai th{
+  width:60px;
+  display:block;
+  margin: 0 auto;
+  border:none;
+  border-radius: 3px;
+}
+.shokai td{
+  display: list-item;
+  width: 100%;
+  border-top: none !important;
+}
+}/* end */

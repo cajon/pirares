@@ -1,0 +1,90 @@
+/*全体*/
+ .thumbnail_all {
+    width:100%;
+    height:inherit;
+    padding:0;
+    overflow: hidden;
+    position: relative;
+    border:0;
+    border-radius:0;
+    box-shadow:none;
+    text-align:center;
+    background: #00293c;
+}
+
+
+
+
+/*おび開始 体験ダイビング*/
+.top_box01 {
+    background-image: url(../img/top01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+/*おび終了 体験ダイビング*/
+
+
+
+
+
+
+
+
+
+
+
+/*値段*/
+.row-fluid.team {
+    padding-top: 50px;
+}
+
+.highlighted-box_01{
+    background:#F4F8F9;
+    padding: 20px 30px 60px 30px ;
+}
+/*値段*/
+
+
+
+
+/*オプションツアー開始*/
+.thumbnail_all p{
+    padding: 10px;
+    font-weight: 100;
+     color: #E2745E;
+}
+.thumbnail_all h3{
+    color: #E2745E;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.thumbnail_all h4{
+    color: #E2745E;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.thumbnail_all >img{
+    display: block;
+    max-width: 100%;
+}
+.btn{
+    margin-top: 15px;
+}
+/*オプションツアー終了*/
+
+/*注意開始*/
+.row-fluid p{
+    padding: 10px;
+    font-weight: 100;
+    color: #171515;
+}
+/*注意終了*/
+
+p.fittext2{
+    color: #e2745e;
+}

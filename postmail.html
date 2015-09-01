@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<link rel="stylesheet" href="postmail.css" type="text/css" media="all" />
+<title>お問い合わせフォーム</title>
+</head>
+<body>
+<blockquote>
+<strong class="ttl">お問い合わせフォーム</strong>
+<ol>
+<li>当サイトに関する質問や感想などをお受けしています。</li>
+<li>以下のフォームより、必要事項を入力のうえ送信してください。</li>
+</ol>
+<form action="./postmail.cgi" method="post">
+<input type="hidden" name="need" value="name email 問合せ種別" />
+<input type="hidden" name="sort" value="name email 問合せ種別 メッセージ" />
+<input type="hidden" name="match" value="email email2" />
+<table summary="問合せフォーム" class="form">
+<tr>
+	<th>お名前</th>
+	<td><input type="text" name="name" size="35" /></td>
+</tr><tr>
+	<th>メールアドレス</th>
+	<td>
+		<input type="text" name="email" size="35" /><br />
+		<input type="text" name="email2" size="35" /> （再度入力）
+	</td>
+</tr><tr>
+	<th>問合せ種別</th>
+	<td>
+		<input type="radio" name="問合せ種別" value="ご質問" />ご質問<br />
+		<input type="radio" name="問合せ種別" value="ご相談" />ご相談<br />
+		<input type="radio" name="問合せ種別" value="ご感想" />ご感想<br />
+		<input type="radio" name="問合せ種別" value="ご依頼" />ご依頼<br />
+		<input type="radio" name="問合せ種別" value="その他" />その他
+	</td>
+</tr><tr>
+	<th>問合せ内容</th>
+	<td><textarea name="メッセージ" rows="7" cols="48"></textarea></td>
+</tr>
+</table>
+<br />
+<input type="submit" value="送信する" /><input type="reset" value="リセット" />
+</form>
+
+<strong class="ttl">個人情報の取扱いについて</strong>
+<ol>
+<li>ご記入いただいた個人情報は、お問い合わせへの対応および確認のためのみに利用します。</li>
+<li>また、この目的のためにお問い合わせの記録を残すことがあります。</li>
+</ol>
+</blockquote>
+</body>
+</html>

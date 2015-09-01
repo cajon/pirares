@@ -1,0 +1,39 @@
+/*header*/
+.rogo1{
+  padding-top:20px;
+  width: 165px;
+}
+
+@media (min-width: 768px){
+.navbar {
+    border-radius: 0px;
+}
+/*ボディ*/
+body{
+  /*background-image: url(./img_free/1.png);*/
+  background-repeat:no-repeat;
+}
+/*footer*/
+#first-person ul{
+  list-style-type:none;
+  color:rgba(255, 255, 255, 0.77);
+  float: left;
+}
+li{
+  list-style-type:none;
+}
+div#second-person img{
+  width: 100%;
+}
+p.fittext2{
+    font-family: 'Playfair Display', serif;
+    color:#E2745E;
+}
+div#service2{
+    padding-top: 50px;
+}
+
+h1.brand-heading {
+    padding: 300px;
+}
+

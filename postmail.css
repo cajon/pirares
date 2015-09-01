@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* 本文 */
+body {
+	font-size: 85%;
+	background: #fff;
+	color: #000;
+	font-family: Verdana,"MS PGothic","Osaka",Arial,sans-serif;
+}
+
+/* テーブル */
+table.form {
+	border: 1px solid #7777bb;
+	border-collapse: collapse;
+	margin-top: 1em;
+}
+table.form th, table.form td {
+	text-align: left;
+	border: 1px solid #7777bb;
+	padding: 8px;
+	font-weight: normal;
+}
+table.form th {
+	white-space: nowrap;
+	background: #cccce6;
+}
+table.form td {
+	background: #f0f0f0;
+}
+
+/* タイトル装飾 */
+strong.ttl {
+	text-align: left;
+	border-left: solid 4px #cc0000;
+	display: block;
+	padding: 2px 5px;
+	margin-top: 2em;
+}
+
+/* メッセージ */
+p.msg {
+	color: #dd0000;
+	margin: 2em;
+}
+span.msg {
+	color: #dd0000;
+}
+
+/* 戻りボタン */
+form.back {
+	margin-top: 2em;
+}

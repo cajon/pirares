@@ -1,0 +1,579 @@
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>パイレーツマリンクラブ</title>
+        <!-- Load Roboto font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!-- Load css styles -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+         <!-- スライダー開始 -->
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <!-- スライダー終了 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Elastic Image Slideshow with Thumbnail Preview" />
+        <meta name="keywords" content="jquery, css3, responsive, image, slider, slideshow, thumbnails, preview, elastic" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+    <noscript
+      <link rel="stylesheet" type="text/css" href="css/noscript.css" />
+    </noscript>
+        <link rel="stylesheet" type="text/css" href="css/styleme.css">
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
+        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
+        <link rel="shortcut icon" href="images/ico/favicon.ico">
+        <!-- フォント -->
+        <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:700' rel='stylesheet' type='text/css'>
+    </head>
+    
+    <body>
+        <!-- header 開始-->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="index.html" class="brand">
+                        <img src="img/pirates.jpg" width="120" height="40" alt="Logo" />
+                        <!-- This is website logo -->
+                    </a>
+                    <!-- Navigation button, visible on small resolution -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-menu"></i>
+                    </button>
+                    <!-- Main navigation -->
+                    <div class="nav-collapse collapse pull-right">
+                        <ul class="nav" id="top-navigation">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="taiken_daiving.html">体験ダイビング</a></li>
+                            <li><a href="snorkel.html">スノーケリング</a></li>
+                            <li><a href="http://blog.livedoor.jp/okinawa_umizoku/">ブログ</a></li>
+                            <li><a href="staff.html">ショップ情報</a></li>
+                            <li><a href="form.html">お問い合わせ</a></li>
+                        </ul>
+                        <img class="rogo1" src="img/rogo1.png" alt="">
+                    </div>
+                    <!-- End main navigation -->
+                </div>
+            </div>
+        </div>
+        <!-- header 終了-->
+
+
+        <!-- Intro Header -->
+       <header class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h1 class="form-heading">
+                        お問い合わせフォーム</h1>
+                        <!-- form -->
+                        <form action="./postmail.cgi" method="post" class="form-horizontal">
+
+                            <div class="form-group form-group-sm">
+                                <label for="input-name" class="col-sm-4 control-label">
+                                <span class="m-alert">必須</span>お名前</label>
+                                <div class="col-sm-8">
+                                    <input name="_name" class="form-control"
+                                    placeholder="お名前を入力ください"
+                                    type="text" id="Name"
+                                    required="required"/>
+                                </div>
+                            </div>
+                            <!-- お名前 -->
+                            <div class="form-group form-group-sm">
+                                <label for="input-name" class="col-sm-4 control-label">
+                                <span class="m-alert">必須</span>ふりがな</label>
+                                <div class="col-sm-8">
+                                    <input name="_ふりがな" class="form-control"
+                                    placeholder="ふりがなを入力ください"
+                                    type="text" id="Name"
+                                    required="required"/>
+                                </div>
+                            </div>
+                            <!-- ふりがな -->
+                            <div class="form-group form-group-sm">
+                                <label for="prefecture" class="col-sm-4 control-label">
+                                <span class="m-alert">必須</span>年齢</label>
+                                <div class="col-sm-8">
+                                <select  class="form-control"
+                                id="Prefecture" required="required" name="年齢">
+                                    <option value="">▼年齢</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+                                    <option value="33">33</option>
+                                    <option value="34">34</option>
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                    <option value="40">40</option>
+                                    <option value="41">41</option>
+                                    <option value="42">42</option>
+                                    <option value="43">43</option>
+                                    <option value="44">44</option>
+                                    <option value="45">45</option>
+                                    <option value="46">46</option>
+                                    <option value="47">47</option>
+                                    <option value="48">48</option>
+                                    <option value="49">49</option>
+                                    <option value="50">50</option>
+                                    <option value="51">51</option>
+                                    <option value="52">52</option>
+                                    <option value="53">53</option>
+                                    <option value="54">54</option>
+                                    <option value="55">55</option>
+                                    <option value="56">56</option>
+                                    <option value="57">57</option>
+                                    <option value="58">58</option>
+                                    <option value="59">59</option>
+                                    <option value="60">60</option>
+                                    <option value="61">61</option>
+                                    <option value="62">62</option>
+                                    <option value="63">63</option>
+                                    <option value="64">64</option>
+                                    <option value="65">65</option>
+                                    <option value="66">66</option>
+                                    <option value="67">67</option>
+                                    <option value="68">68</option>
+                                    <option value="69">69</option>
+                                    <option value="70">70</option>
+                                    <option value="71">71</option>
+                                    <option value="72">72</option>
+                                    <option value="73">73</option>
+                                    <option value="74">74</option>
+                                    <option value="75">75</option>
+                                    <option value="76">76</option>
+                                    <option value="77">77</option>
+                                    <option value="78">78</option>
+                                    <option value="79">79</option>
+                                    <option value="80">80</option>
+                                    <option value="81">81</option>
+                                    <option value="82">82</option>
+                                    <option value="83">83</option>
+                                    <option value="84">84</option>
+                                    <option value="85">85</option>
+                                    <option value="86">86</option>
+                                    <option value="87">87</option>
+                                    <option value="88">88</option>
+                                    <option value="89">89</option>
+                                    <option value="90">90</option>
+                                    <option value="91">91</option>
+                                    <option value="92">92</option>
+                                    <option value="93">93</option>
+                                    <option value="94">94</option>
+                                    <option value="95">95</option>
+                                    <option value="96">96</option>
+                                    <option value="97">97</option>
+                                    <option value="98">98</option>
+                                    <option value="99">99</option>
+                                    <option value="100">100</option>
+                                    <option value="101">101</option>
+                                    <option value="102">102</option>
+                                    <option value="103">103</option>
+                                    <option value="104">104</option>
+                                    <option value="105">105</option>
+                                    <option value="106">106</option>
+                                    <option value="107">107</option>
+                                    <option value="108">108</option>
+                                    <option value="109">109</option>
+                                    <option value="110">110</option>
+                                    <option value="111">111</option>
+                                    <option value="112">112</option>
+                                    <option value="113">113</option>
+                                    <option value="114">114</option>
+                                    <option value="115">115</option>
+                                    <option value="116">116</option>
+                                    <option value="117">117</option>
+                                    <option value="118">118</option>
+                                    <option value="119">119</option>
+                                    <option value="120">120</option>
+                                </select>
+                            </div>
+                            </div>
+                            <!-- 年齢 -->
+                            <div class="form-group form-group-sm">
+                                <label for="input-check" class="col-sm-4 control-label">
+                                <span class="m-alert">必須</span>性別</label>
+                                <div class="col-sm-8 required="required"">
+                                    <label for="radio-inline">
+                                        <input type="radio" name="性別"
+                                        value="男性" required="required">男性
+                                    </label>
+                                    <label for="radio-inline">
+                                        <input type="radio" name="性別"
+                                         value="女性" required="required">女性
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- 性別 -->
+                            <div class="form-group form-group-sm">
+                                <label for="input-name" class="col-sm-4 control-label">
+                                <span class="m-alert">必須</span>携帯電話</label>
+                                <div class="col-sm-8">
+                                    <input name="_携帯電話" class="form-control"
+                                    placeholder="現地での連絡先を入力ください"
+                                    type="telephone" id="Name"
+                                    required="required"/>
+                                </div>
+                            </div>
+                            <!-- 携帯電話  現地での連絡先 -->
+                            <div class="form-group form-group-sm">
+                                <label for="input-name" class="col-sm-4 control-label">
+                                ご住所</label>
+                                <div class="col-sm-8">
+                                    <input name="ご住所" class="form-control"
+                                    placeholder="ご住所を入力ください"
+                                    type="text" id="Name"/>
+                                </div>
+                            </div>
+                            <!-- 住所 -->
+                            <div class="form-group form-group-sm">
+                                <label for="input-name" class="col-sm-4 control-label">
+                                <span class="m-alert">必須</span>メールアドレス</label>
+                            <div class="col-sm-8">
+                                <input name="_email" class="form-control" placeholder="Email" type="email" id="E-mail" required="required"/>
+                            </div>
+                            </div>
+                            <!-- メール -->
+                            <div class="form-group form-group-sm">
+                                <label for="input-name" class="col-sm-4 control-label">
+                                <span class="m-alert">必須</span>ご宿泊先</label>
+                                <div class="col-sm-8">
+                                    <input name="_ご宿泊先" class="form-control"
+                                    placeholder="ご宿泊先を入力ください"
+                                    type="text" id="Name"
+                                    required="required"/>
+                                </div>
+                            </div>
+                            <!-- ご宿泊先名 -->
+                            <div class="form-group form-group-sm">
+                                <label for="input-name" class="col-sm-4 control-label">
+                                <span class="m-alert">必須</span>沖縄へのご到着日</label>
+                                <div class="col-sm-8">
+                                    <input name="_沖縄へのご到着日" class="form-control"
+                                    placeholder="沖縄へのご到着日を入力ください"
+                                    type="date" id="Name"
+                                    required="required"/>
+                                </div>
+                            </div>
+                            <!-- 沖縄へのご到着日 -->
+                            <div class="form-group form-group-sm">
+                                <label for="input-name" class="col-sm-4 control-label">
+                                <span class="m-alert">必須</span>沖縄からのご出発日</label>
+                                <div class="col-sm-8">
+                                    <input name="_沖縄からのご出発日" class="form-control"
+                                    placeholder="沖縄からのご出発日を入力ください"
+                                    type="date" id="Name"
+                                    required="required"/>
+                                </div>
+                            </div>
+                            <!-- 沖縄からのご出発日 -->
+                            <div class="form-group form-group-sm">
+                                <label for="input-name" class="col-sm-4 control-label">
+                                <span class="m-alert">必須</span>ツアーご予約予定日</label>
+                                <div class="col-sm-8">
+                                    <input name="_ツアーご予約予定日" class="form-control"
+                                    placeholder="ツアーご予約予定日を入力ください"
+                                    type="date" id="Name"
+                                    required="required"/>
+                                </div>
+                            </div>
+                            <!-- ツアーご予約予定日 -->
+                            <div class="form-group form-group-sm">
+                                <label for="input-name" class="col-sm-4 control-label">
+                                <span class="m-alert">必須</span>参加人数</label>
+                                <div class="col-sm-8">
+                                    <input name="_参加人数" class="form-control"
+                                    placeholder="参加人数を入力ください"
+                                    type="text" id="Name"
+                                    required="required"/>
+                                </div>
+                            </div>
+                            <!-- 参加人数 -->
+                            <div class="form-group">
+                             <label for="message" class="col-sm-4 control-label">
+                             <span class="m-alert">必須</span>確認内容</label>
+                             <div class="col-sm-8">
+                             <textarea placeholder=
+                             "全員のお名前、年齢、身長、"
+                             class="form-control" rows="3" name="確認内容"></textarea>
+                             </div>
+                             </div>
+                             <!-- メッセージ -->
+                            <div class="form-group">
+                                <label for="message" class="col-sm-4 control-label">
+                                ケラマクルージングツアー<br>参加お申込み
+                                </label>
+                                <div class="col-sm-8">
+                                    <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="スノーケリングツアー" name="ケラマクルージングツアー">
+                                スノーケリングツアー
+                                </label>
+                                <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="体験ダイビングツアー" name="ケラマクルージングツアー"> 体験ダイビングツアー
+                                </label>
+                                </div>
+                                <div class="col-sm-8">
+                                    <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="ウミガメウォッチング" name="ケラマクルージングツアー">
+                                ウミガメウォッチング
+                                </label>
+                                <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="パラセーリング" name="ケラマクルージングツアー"> パラセーリング
+                                </label>
+                                </div>
+                                <div class="col-sm-6 col-sm-offset-4">
+                                    <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="インストラクターが撮る思ひ出フォト" name="ケラマクルージングツアー">
+                                インストラクターが撮る思ひ出フォト
+                                </label>
+                                </div>
+                            </div>
+                            <!-- ケラマツアー -->
+                            <div class="form-group">
+                                <label for="message" class="col-sm-4 control-label">
+                                ダイビングツアー<br>参加お申込み
+                                </label>
+                                <div class="col-sm-8">
+                                    <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="インターネットダイビングスクール" name="ダイビングツアー">
+                                インターネットダイビングスクール
+                                </label>
+                                <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="沖縄本島ビーチ２ダイブ" name="ダイビングツアー">
+                                沖縄本島ビーチ２ダイブ
+                                </label>
+                                </div>
+                                <div class="col-sm-6 col-sm-offset-4">
+                                <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="縄本島ビーチ２ダイブ" name="ダイビングツアー">
+                                沖縄本島ビーチ２ダイブ
+                                </label>
+                                </div>
+                                <div class="col-sm-6 col-sm-offset-4">
+                                    <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="ケラマ２ボートダイブ" name="ダイビングツアー">
+                                ケラマ２ボートダイブ
+                                </label>
+                                <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="粟国、渡名喜遠征ダイブ" name="ダイビングツアー">
+                                粟国、渡名喜遠征ダイブ
+                                </label>
+                                </div>
+                                <div class="col-sm-6 col-sm-offset-4">
+                                    <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="ナイトダイブビーチ" name="ダイビングツアー">
+                                ナイトダイブビーチ
+                                </label>
+                                <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="ナイトダイブボート" name="ダイビングツアー">
+                                ナイトダイブボート
+                                </label>
+                                </div>
+                                <div class="col-sm-6 col-sm-offset-4">
+                                    <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="１ダイブ追加" name="ダイビングツアー">
+                                １ダイブ追加
+                                </label>
+                                </div>
+                                <div class="col-sm-6 col-sm-offset-4">
+                                    <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="レンタルの有無（詳しくはお問い合わせの欄にご記入下さい）" name="ダイビングツアー">
+                                レンタルの有無（詳しくはお問い合わせの欄にご記入下さい）
+                                </label>
+                                </div>
+                            </div>
+                            <!-- ダイビングツアー -->
+                            <!-- ケラマツアー -->
+                            <div class="form-group">
+                                <label for="message" class="col-sm-4 control-label">
+                                ホエールウォッチング<br>参加お申込み
+                                </label>
+                                <div class="col-sm-8">
+                                    <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="午前便０９：００～１２：００" name="ホエールウォッチング">
+                                午前便０９：００～１２：００
+                                </label>
+                                <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="午後便１３：００～１６：００" name="ホエールウォッチング">
+                                午後便１３：００～１６：００
+                                </label>
+                                </div>
+                            </div>
+                            <!-- ホエール -->
+                            <div class="form-group">
+                             <label for="message" class="col-sm-4 control-label">お問合わせ<br>ご質問</label>
+                             <div class="col-sm-8">
+                             <textarea name="message" class="form-control" rows="3" name="お問合わせご質問"></textarea>
+                             </div>
+                             </div>
+                             <!-- メッセージ -->
+                            <div class="form-group">
+                                <label for="message" class="col-sm-4 control-label">
+                                <span class="m-alert">必須</span><br>
+                                ご宿泊先から<br>ショップへの<br>アクセス方法
+                                </label>
+                                <div class="col-sm-8">
+                                    <label class="checkbox-inline">
+                                <input type="checkbox"
+                                id="inlineCheckbox1" value="レンタカーにてご来店" name="ショップへのアクセス方法">
+                                レンタカーにてご来店
+                                </label>
+                                <label class="checkbox-inline">
+                                <input type="checkbox"
+                                id="inlineCheckbox2" value="タクシーにてご来店" name="ショップへのアクセス方法">
+                                タクシーにてご来店
+                                </label>
+                                </div>
+                                <div class="col-sm-8">
+                                <label class="checkbox-inline">
+                                <input type="checkbox"
+                                id="inlineCheckbox2" value="ショップ送迎車ご利用" name="ショップへのアクセス方法">
+                                ショップ送迎車ご利用
+                                </label>
+                                </div>
+                            </div>
+                            <!-- ダイビングツアー -->
+                     <div class="form-group form-group-sm">
+                         <div class="col-sm-6 col-sm-offset-5">
+                            <button type="submit" value="送信する"class="btn btn-default">送信する</button>
+                            <button type="reset" value="リセット"class="btn btn-default">リセット</button>
+                        </div>
+                    </div>
+                    <!-- 送信ボタン -->
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <!-- footer 開始 -->
+        <div id="seabed_area">
+          <div class="infosection primary-section" id="service2">
+                <div class="container footer0">
+                    <div class="row-fluid team">
+<!--                     <h4><a href="index.html">TOP</a></h4> -->
+                        <div class="span4 footer1" id="first-person">
+                    
+                        <ul>
+<!--                              <li><a href="index.html">TOP</a></li> -->
+                             <li><p class="fittext2">CONTENTS</p></li>
+                             <li><a href="taiken_daiving.html">体験ダイビング</a></li>
+                             <li><a href="snorkel.html">スノーケリング</a></li>
+                        </ul>
+                        </div>
+                        <div class="span4 footer2" id="second-person">
+                         <ul>
+                             <li><p class="fittext2">SHOP INFO</p></li>
+                             <li><a href="http://ameblo.jp/ma-ke1007/">ブログ</a></li>
+                             <li><a href="staff.html">ショップ・スタッフ</a></li>
+                             <li><a href="https://www.facebook.com/Piratesmarineclub">
+                                  Facebook</a></li>
+                             <li><a href="https://www.youtube.com/user/mocomocomax911/videos">
+                                 youtube</a></li>
+                             <li><a href="form.html">お問合せ</a></li>
+                         </ul>
+                        </div>
+                        <div class="span3" id="second-person">
+                            <div class="fb-page" data-href="https://www.facebook.com/Piratesmarineclub" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Piratesmarineclub"><a href="https://www.facebook.com/Piratesmarineclub">パイレーツマリンクラブ</a></blockquote></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer section start -->
+        <div class="footer">
+            <p>Copyright &copy; PiratrsMarineClub All Rights Reserved.<a href=""></a></p>
+        </div>
+        <!-- Footer section end -->
+
+        <!-- Include javascript -->
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+        <script type="text/javascript" src="js/jquery.cslider.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <!-- Load google maps api and call initializeMap function defined in app.js -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;callback=initializeMap"></script>
+        <!-- css3-mediaqueries.js for IE8 or older -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- スライダー開始 -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#ei-slider').eislideshow({
+          animation     : 'center',
+          autoplay      : true,
+          slideshow_interval  : 3000,
+          titlesFactor    : 0
+                });
+            });
+        </script>
+        <!-- スライダー終了 -->
+        
+        <div id="fb-root"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4&appId=179074992194400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    </body>
+</html>

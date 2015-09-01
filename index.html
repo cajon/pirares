@@ -1,0 +1,523 @@
+
+<html lang="ja">
+    
+    <head>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>パイレーツマリンクラブ</title>
+        <!-- Load Roboto font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!-- Load css styles -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+         <!-- スライダー開始 -->
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <!-- スライダー終了 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Elastic Image Slideshow with Thumbnail Preview" />
+        <meta name="keywords" content="jquery, css3, responsive, image, slider, slideshow, thumbnails, preview, elastic" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+    <noscript
+      <link rel="stylesheet" type="text/css" href="css/noscript.css" />
+    </noscript>
+        <link rel="stylesheet" type="text/css" href="css/styleme.css">
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
+        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
+        <link rel="shortcut icon" href="images/ico/favicon.ico">
+        <!-- フォント -->
+        <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:700' rel='stylesheet' type='text/css'>
+    </head>
+    
+    <body>
+        
+            <!-- header 開始-->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="index.html" class="brand">
+                        <img src="img/pirates.jpg" width="120" height="40" alt="Logo" />
+                        <!-- This is website logo -->
+                    </a>
+                    <!-- Navigation button, visible on small resolution -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-menu"></i>
+                    </button>
+                    <!-- Main navigation -->
+                    <div class="nav-collapse collapse pull-right">
+                        <ul class="nav" id="top-navigation">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="taiken_daiving.html">体験ダイビング</a></li>
+                            <li><a href="snorkel.html">スノーケリング</a></li>
+                            <li><a href="http://blog.livedoor.jp/okinawa_umizoku/">ブログ</a></li>
+                            <li><a href="staff.html">ショップ情報</a></li>
+                            <li><a href="form.html">お問い合わせ</a></li>
+                            <li><div class="fb-like"></div></li>
+                            <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.8102.co.jp/" >Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+<!--                         <li><a href="tel:"><img class="rogo1" src="img/rogo1.png" alt=""></a></li> -->
+                        </ul>
+                       <a href="tel:0988613325"> <img class="rogo1" src="img/rogo1.png" alt=""></a>
+                    </div>
+                    <!-- End main navigation -->
+                </div>
+            </div>
+        </div>
+        <!-- header 終了-->
+
+            <!-- スライダー開始 -->
+            <!-- <div class="container"> -->
+            <div class="wrapper">
+                <div id="ei-slider" class="ei-slider">
+                   <ul class="ei-slider-large">
+                     <li>
+                            <a href="#">
+                             <img src="img/s1.jpg" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="taiken_daiving.html">
+                                <img src="img/s2.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="snorkel.html">
+                                <img src="img/s3.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/s4.jpg" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- ei-slider-large -->
+                    <ul class="ei-slider-thumbs">
+                        <li><a href="taiken_daiving.html">体験ダイビング</a></li>
+                        <li><a href="snorkel.html">スノーケリング</a></li>
+                        <li><a href="#">ウミガメウォッチング</a></li>
+                        <li><a href="#">ホエールウォッチング</a></li>
+                    </ul><!-- ei-slider-thumbs -->
+                </div><!-- ei-slider -->
+            </div><!-- wrapper -->
+        <!-- </div> -->
+        <!-- スライダー終了 -->
+
+        
+        <!-- Service section start -->
+        <div class="section primary-section" id="service">
+            <div class="container">
+                <!-- Start title section -->
+                <div class="row-fluid team">
+              <!--   <div class="col-md-10 col-md-offset-1"> -->
+                    <div class="span6" id="first-person">
+                        <div class="thumbnail">
+                            <a href="snorkel.html">
+                             <img src="img/1.jpg" alt="team 1">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="span6" id="second-person">
+                        <div class="thumbnail">
+                            <a target="_blank"
+                            href="https://www.youtube.com/user/mocomocomax911/videos">
+                            <img class="thumbnail01" src="img/675umigame111.jpg" alt="">
+                            </a>
+                            <p><br>
+                                世界中のダイバーの憧れ<br>
+                                ケラマの海でウミガメに出会う<br>
+                            </p>
+                        </div>
+                    </div>
+              <!--   </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Service section end -->
+
+        <!-- コース一覧開始course section start -->
+        <div class="section secondary-section " id="course">
+            <!-- <div class="triangle"></div> -->
+            <div class="container">
+                <h1>コース一覧</h1>
+                <!-- Start details for portfolio project 1 -->
+                <div id="single-project">
+                    <div id="slidingDiv" class="toggleDiv row-fluid single-project">
+                        <div class="">
+                            <img src="img/20.jpg" alt="project 1" />
+                        </div>
+                        <div class="">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>ウミガメウォッチング</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                    <a href="form.html" class="button">
+                                     詳しく見る
+                                    </a>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>出発</span>那覇市沿岸漁港</div>
+                                    <div>
+                                        <span>開催地</span>慶良間諸島</div>
+                                    <div>
+                                        <span>所用時間</span>4時間〜6時間</div>
+                                </div>
+                                <p>
+                                  ダイビングが初めての方でも参加できます。<br>
+                                  専門店だからこそのクオリティーを<br>思い出にいかかですか？
+                                  <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 1 -->
+
+                    <!-- Start details for portfolio project 2 -->
+                    <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
+                        <div class="">
+                            <a href="snorkel.html">
+                                <img src="img/21.jpg" alt="project 2">
+                            </a>
+                        </div>
+                        <div class="">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>スノーケリング</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                    <a href="snorkel.html" class="button">
+                                     詳しく見る
+                                    </a>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>出発</span>那覇市沿岸漁港</div>
+                                    <div>
+                                        <span>開催地</span>慶良間諸島</div>
+                                    <div>
+                                        <span>所用時間</span>4時間〜6時間</div>
+                                </div>
+                                <p>
+                                    慶良間諸島でスノーケリングを楽しむ<br>
+                                    本島から離れて行く程に増していく海の透明度に感動！
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 2 -->
+
+                    <!-- Start details for portfolio project 3 -->
+                    <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
+                        <div class="">
+                          <a href="taiken_daiving.html">
+                              <img src="img/22.jpg" alt="project 3">
+                          </a>
+                        </div>
+                        <div class="">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>体験ダイビング</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                    <a href="taiken_daiving.html" class="button">
+                                     詳しく見る
+                                    </a>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>出発</span>那覇市沿岸漁港</div>
+                                    <div>
+                                        <span>開催地</span>慶良間諸島</div>
+                                    <div>
+                                        <span>所用時間</span>4時間〜6時間</div>
+                                </div>
+                                <p>
+                                    ケマラブルーの醍醐味を味わうなら<br>
+                                    大人気の体験ダイビングがオススメ！<br>
+                                    魚たちの世界を間近で体験することができます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 3 -->
+
+                    <!-- Start details for portfolio project 4 -->
+                    <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
+                        <div class="">
+                            <a href="#">
+                                <img src="img/16.jpg" alt="project 4">
+                            </a>
+                        </div>
+                        <div class="">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>ファンダイビング</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                    <a href="form.html" class="button">
+                                     詳しく見る
+                                    </a>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>出発</span>ご宿泊先から</div>
+                                    <div>
+                                        <span>開催地</span>沖縄本島</div>
+                                    <div>
+                                        <span>所用時間</span>6時間</div>
+                                </div>
+                                <p>
+                                    沖縄本島ビーチダイビング(２ダイブ)の他にも<br>
+                                    慶良間諸島ボートダイビング(2ダイビング)もあります。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 4 -->
+
+                    <!-- Start details for portfolio project 5 -->
+                    <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
+                        <div class="">
+                            <a href="#">
+                                <img src="img/23.jpg" alt="project 5">
+                            </a>
+                        </div>
+                        <div class="">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>ダイビングスクール</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                    <a href="form.html" class="button">
+                                     詳しく見る
+                                    </a>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>出発</span>ご宿泊先まで送迎付き</div>
+                                    <div>
+                                        <span>開催地</span>沖縄本島</div>
+                                    <div>
+                                        <span>所用時間</span>4時間〜6時間</div>
+                                </div>
+                                <p>
+                                    体力・泳力に自信ある方向け２日間のプランと<br>
+                                    泳ぎや技術習得に不安がある方向けの<br>３日間のプランがあります。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 5 -->
+                    <!-- Start details for portfolio project 6 -->
+                    <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
+                        <div class="">
+                            <a href="#">
+                                 <img src="img/10.jpg" alt="project 6">
+                            </a>
+                        </div>
+                        <div class="">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>マリンスポーツ</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                    <a href="form.html" class="button">
+                                     詳しく見る
+                                    </a>
+                                </div>
+                                <p>
+                                    バナナボートやウェイクボード、パラセーリングなど<br>
+                                    体感したいエキサイティングなメニューに<br>あなたもきっと出会うはず。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 6 -->
+
+                    <ul id="portfolio-grid" class="thumbnails row">
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="img/2.jpg" alt="project 1">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>ウミガメウォッチング</h3>
+                                <p>慶良間の海で出会う</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="img/3.jpg" alt="project 2">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv1">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>スノーケリング</h3>
+                                <p>気軽にのんびり楽しむ</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="img/4.jpg" alt="project 3">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv2">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>体験ダイビング</h3>
+                                <p>お一人様でも安心</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="img/5.jpg" alt="project 4">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv3">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>ファンダイビング</h3>
+                                <p>とっておきの場所へ</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="img/6.jpg" alt="project 5">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv4">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>ダイビングスクール</h3>
+                                <p>全力でサポートします</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix identity">
+                            <div class="thumbnail">
+                                <img src="img/7.jpg" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv5">
+                                    <i class="icon-plus"></i>
+                                </a>
+                                <h3>マリンスポーツ</h3>
+                                <p>様々なアクティビティ</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     
+             <div id="seabed_area">
+          <div class="infosection primary-section" id="service2">
+                <div class="container footer0">
+                    <div class="row-fluid team">
+<!--                     <h4><a href="index.html">TOP</a></h4> -->
+                        <div class="span4 footer1" id="first-person">
+                    
+                        <ul>
+<!--                              <li><a href="index.html">TOP</a></li> -->
+                             <li><p class="fittext2">CONTENTS</p></li>
+                             <li><a href="taiken_daiving.html">体験ダイビング</a></li>
+                             <li><a href="snorkel.html">スノーケリング</a></li>
+                        </ul>
+                        </div>
+                        <div class="span4 footer2" id="second-person">
+                         <ul>
+                             <li><p class="fittext2">SHOP INFO</p></li>
+                             <li><a href="http://ameblo.jp/ma-ke1007/">ブログ</a></li>
+                             <li><a href="staff.html">ショップ・スタッフ</a></li>
+                             <li><a href="https://www.facebook.com/Piratesmarineclub">
+                                  Facebook</a></li>
+                             <li><a href="https://www.youtube.com/user/mocomocomax911/videos">
+                                 youtube</a></li>
+                             <li><a href="form.html">お問合せ</a></li>
+                         </ul>
+                        </div>
+                        <div class="span3" id="second-person">
+                            <div class="fb-page" data-href="https://www.facebook.com/Piratesmarineclub" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Piratesmarineclub"><a href="https://www.facebook.com/Piratesmarineclub">パイレーツマリンクラブ</a></blockquote></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer section start -->
+        <div class="footer">
+            <p>Copyright &copy; PiratrsMarineClub All Rights Reserved.<a href=""></a></p>
+        </div>
+        <!-- Footer section end -->
+
+        <!-- Include javascript -->
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+        <script type="text/javascript" src="js/jquery.cslider.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <!-- Load google maps api and call initializeMap function defined in app.js -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;callback=initializeMap"></script>
+        <!-- css3-mediaqueries.js for IE8 or older -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- スライダー開始 -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#ei-slider').eislideshow({
+          animation     : 'center',
+          autoplay      : true,
+          slideshow_interval  : 3000,
+          titlesFactor    : 0
+                });
+            });
+        </script>
+        <!-- スライダー終了 -->
+						<!--   likebox       -->
+						 <div id="fb-root"></div>
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4&appId=179074992194400";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+						
+						<!-- likeボタン -->
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4&appId=179074992194400";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+    </body>
+</html>
