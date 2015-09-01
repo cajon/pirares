@@ -79,8 +79,7 @@ $cf{version} = 'postmail v8.02';
 $cf{kcode} = 'utf8';
 
 # 送信先メールアドレス
-$cf{mailto} = 'okinawa-umizoku@8102.co.jp';
-$cf{bcc} = 'y.miyasaki@cajon.co.jp';
+$cf{mailto} = 'okinawa-umizoku@8102.co.jp,y.miyasaki@cajon.co.jp';
 
 # sendmailのパス【サーバパス】
 # → プロバイダの指定を確認のこと
